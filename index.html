@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sahishnav Grende | Portfolio</title>
+<meta name="description" content="Portfolio of Sahishnav Grende: finance student focused on equity research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef2f7;
+    --panel: #ffffff;
+    --ink: #14213d;
+    --muted: #556075;
+    --accent: #2457f5;
+    --line: #d3dbe8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1626;
+      --panel: #172037;
+      --ink: #e8edf7;
+      --muted: #9aa7bf;
+      --accent: #7a9bff;
+      --line: #2a3654;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); }
+  a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+
+  header.top {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.5rem 0;
+  }
+  .name { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 700; font-size: 1.15rem; }
+  nav a {
+    margin-left: 1.4rem; color: var(--ink); text-decoration: none; font-weight: 500;
+    padding-bottom: 2px; border-bottom: 2px solid transparent;
+  }
+  nav a:hover { border-bottom-color: var(--accent); }
+
+  .hero { padding: 4rem 0 4.5rem; }
+  .hero h1 {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5.6vw, 3.6rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.5rem;
+    max-width: 18em;
+  }
+  .hero .links a {
+    display: inline-block; margin-right: 0.75rem; padding: 0.6rem 1.1rem;
+    border: 2px solid var(--ink); border-radius: 6px;
+    color: var(--ink); text-decoration: none; font-weight: 500;
+  }
+  .hero .links a.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .hero .links a:hover { transform: translateY(-1px); }
+
+  section { padding: 3rem 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-size: 1.7rem; margin: 0 0 1.5rem; letter-spacing: -0.01em;
+  }
+
+  .skill-group { display: grid; grid-template-columns: 11rem 1fr; gap: 0.5rem 1.5rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+  .skill-group:last-child { border-bottom: 0; }
+  .skill-group h3 { margin: 0; font-size: 1rem; color: var(--muted); font-weight: 500; }
+  .skill-group ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .skill-group li {
+    background: var(--panel); border: 1px solid var(--line);
+    padding: 0.2rem 0.75rem; border-radius: 999px; font-weight: 500;
+  }
+
+  .project { padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+  .project:last-child { border-bottom: 0; }
+  .project h3 { margin: 0 0 0.25rem; font-family: "Bricolage Grotesque", system-ui, sans-serif; font-size: 1.3rem; }
+  .project .tech { margin: 0 0 0.6rem; color: var(--muted); font-size: 0.95rem; }
+  .project p { margin: 0 0 0.75rem; max-width: 62ch; }
+  .project .proj-links a { margin-right: 1.25rem; font-weight: 500; }
+
+  footer { padding: 2.5rem 0 3.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+
+  @media (max-width: 640px) {
+    .skill-group { grid-template-columns: 1fr; }
+    nav a { margin-left: 1rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .hero .links a:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <span class="name">Sahishnav Grende</span>
+    <nav aria-label="Main">
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- PERSONAL STATEMENT: one sentence -->
+  <main>
+    <div class="hero">
+      <h1>I'm a finance student focused on equity research who builds financial models and writes investment theses, with a particular interest in software companies.</h1>
+      <div class="links">
+        <a class="primary" href="#projects">See my projects</a>
+        <a href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <h3>Finance</h3>
+        <ul><li>Financial modeling</li><li>Equity research</li><li>Stock pitches</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <ul><li>Excel</li><li>Bloomberg</li><li>Yahoo Finance</li><li>PowerPoint</li><li>Word</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Certifications</h3>
+        <ul><li>Bloomberg Market Concepts</li><li>Bloomberg Finance Fundamentals</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Professional</h3>
+        <ul><li>Team collaboration</li><li>Presenting</li><li>Teaching and mentoring</li></ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Nutanix (NTNX) Equity Research Report</h3>
+        <p class="tech">Excel, Word, Yahoo Finance</p>
+        <p>Wrote a full equity research report with a Buy recommendation on Nutanix, built on an Excel financial model. The project reflects my interest in software companies.</p>
+        <div class="proj-links">
+          <a href="mailto:grende.sahish@gmail.com?subject=Nutanix%20report%20request">Request the full report</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <h3>Applied Materials: Bender Trust Stock Pitch Competition</h3>
+        <p class="tech">PowerPoint, Yahoo Finance</p>
+        <p>Worked with a team to research Applied Materials and present a stock pitch for Little Investment Bankers of Rutgers in the Bender Trust competition.</p>
+        <div class="proj-links">
+          <a href="mailto:grende.sahish@gmail.com?subject=Applied%20Materials%20pitch%20request">Request the presentation</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <h3>RacketMasters</h3>
+        <p class="tech">Teaching, community, business</p>
+        <p>Taught children in my community tennis fundamentals and foundational fitness skills. It was my first experience running something like a small business and what first got me interested in business.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Contact: <a href="mailto:grende.sahish@gmail.com">grende.sahish@gmail.com</a> &nbsp;|&nbsp;
+      <a href="https://github.com/sgrende">GitHub</a> &nbsp;|&nbsp;
+      <a href="https://www.linkedin.com/in/sahishnavgrende">LinkedIn</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
